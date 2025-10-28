@@ -1,33 +1,27 @@
-# Alpine Linux version (smaller image)
-FROM alpine:latest AS builder
+# Single stage Alpine for building and running
+FROM alpine:latest
 
 # Install build dependencies
 RUN apk add --no-cache \
     build-base \
     cmake \
-    ninja \
     git \
-    linux-headers
+    bash
 
 WORKDIR /workspace
 COPY . .
 
-RUN mkdir -p build && cd build && \
-    cmake .. -G Ninja -DCMAKE_BUILD_TYPE=Release && \
-    cmake --build . --parallel $(nproc)
+# Make build script executable
+RUN chmod +x build.sh
 
-RUN ls -R /workspace
+# Create non-root user (Alpine uses adduser)
+RUN adduser -D -u 1000 builder && \
+    chown -R builder:builder /workspace
 
-# Runtime stage with Alpine
-FROM alpine:latest
+USER builder
 
-# Install minimal runtime dependencies
-RUN apk add --no-cache libstdc++ && \
-    adduser -D -u 1000 appuser
+# Build the project
+RUN ./build.sh
 
-WORKDIR /app
-COPY --from=builder /workspace/build/lab1 .
-COPY --from=builder /workspace/config.txt .
-
-USER appuser
-CMD ["./lab1"]
+# Use the TARGET environment variable for entrypoint
+ENTRYPOINT ["/bin/sh", "-c", "exec ./build/bin/${TARGET}"]

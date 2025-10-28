@@ -1,7 +1,13 @@
 name: OS-lab1
 
 services:
-  lab1-app:
+  app:
+    container_name: app
     build:
       context: ..
-      dockerfile: Dockerfile
+      dockerfile: docker-build/Dockerfile
+    environment:
+      - BUILD_DIR=${BUILD_DIR}
+      - TARGET=${TARGET}
+    env_file:
+      - ../.env
