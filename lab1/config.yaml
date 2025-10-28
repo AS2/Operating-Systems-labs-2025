@@ -1,0 +1,4 @@
+interval: 5
+source: /data/folder1
+destination: /data/folder2
+
