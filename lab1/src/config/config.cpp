@@ -14,7 +14,7 @@ static bool split_two(const std::string &line, std::string &a, std::string &b) {
     return !(is >> extra); // ensure two tokens
 }
 
-bool load_config(const std::filesystem::path &path, Config &out, std::string &err) {
+bool Config::load_config(const std::filesystem::path &path, Config &out, std::string &err) {
     out.entries.clear();
     err.clear();
     ifstream in(path);

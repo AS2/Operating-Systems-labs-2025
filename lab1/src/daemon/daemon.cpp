@@ -96,7 +96,7 @@ bool Daemon::daemonize(std::string &err) {
 
 bool Daemon::load_config(std::string &err) {
     Config tmp;
-    if (!::load_config(_config_path, tmp, err)) return false;
+    if (!tmp.load_config(_config_path, tmp, err)) return false;
     _cfg = std::move(tmp);
     return true;
 }

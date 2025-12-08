@@ -11,6 +11,6 @@ struct ConfigEntry {
 
 struct Config {
     std::vector<ConfigEntry> entries;
-};
 
-bool load_config(const std::filesystem::path &path, Config &out, std::string &err);
+    bool load_config(const std::filesystem::path &path, Config &out, std::string &err);
+};
