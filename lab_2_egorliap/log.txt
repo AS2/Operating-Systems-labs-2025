@@ -1,0 +1,250 @@
+[2025-12-03 15:29:56] === Chat server starting ===
+[2025-12-03 15:29:56] Client 0 joined
+[2025-12-03 15:29:56] Client 0 waiting for messages
+[2025-12-03 15:29:56] Client 0 ready
+[2025-12-03 15:29:56] Client 0 started listening
+[2025-12-03 15:29:56] Client 1 waiting for messages
+[2025-12-03 15:29:56] Client 1 joined
+[2025-12-03 15:29:56] Client 1 ready
+[2025-12-03 15:29:56] Client 1 started listening
+[2025-12-03 15:29:56] Client 2 joined
+[2025-12-03 15:29:56] Client 2 ready
+[2025-12-03 15:29:56] All clients confirmed readiness
+[2025-12-03 15:29:56] Client 2 started listening
+[2025-12-03 15:29:56] Client 2 waiting for messages
+[2025-12-03 15:29:56] All clients started listening
+[2025-12-03 15:29:56] Chat server ready. Commands:
+[2025-12-03 15:29:56]   all:<message>       - broadcast to all
+[2025-12-03 15:29:56]   to <id>:<message>   - send to specific client (0-2)
+[2025-12-03 15:29:56]   quit                - shutdown server
+[2025-12-03 15:30:01] Host broadcast:  qewdas
+[2025-12-03 15:30:01] Failed to send manual broadcast to client 0: No such device or address
+[2025-12-03 15:30:01] Failed to send manual broadcast to client 1: No such device or address
+[2025-12-03 15:30:01] Failed to send manual broadcast to client 2: No such device or address
+[2025-12-03 15:30:07] === Chat server starting ===
+[2025-12-03 15:30:07] Client 0 waiting for messages
+[2025-12-03 15:30:07] Client 1 waiting for messages
+[2025-12-03 15:30:07] Client 0 joined
+[2025-12-03 15:30:07] Client 0 ready
+[2025-12-03 15:30:07] Client 1 joined
+[2025-12-03 15:30:07] Client 2 joined
+[2025-12-03 15:30:07] Client 0 started listening
+[2025-12-03 15:30:07] Client 2 ready
+[2025-12-03 15:30:07] Client 2 started listening
+[2025-12-03 15:30:07] Client 2 waiting for messages
+[2025-12-03 15:30:12] Warning: not all clients confirmed readiness within 5 seconds
+[2025-12-03 15:30:17] Warning: not all clients started listening within 5 seconds
+[2025-12-03 15:30:17] Chat server ready. Commands:
+[2025-12-03 15:30:17]   all:<message>       - broadcast to all
+[2025-12-03 15:30:17]   to <id>:<message>   - send to specific client (0-2)
+[2025-12-03 15:30:17]   quit                - shutdown server
+[2025-12-03 15:30:20] Host broadcast:  eqwdas
+[2025-12-03 15:30:20] Client 2 received broadcast:  eqwdas
+[2025-12-03 15:30:20] Client 0 received broadcast:  eqwdas
+[2025-12-03 15:30:26] === Chat server starting ===
+[2025-12-03 15:30:26] Client 0 joined
+[2025-12-03 15:30:26] Client 0 waiting for messages
+[2025-12-03 15:30:26] Client 1 joined
+[2025-12-03 15:30:26] Client 0 ready
+[2025-12-03 15:30:26] Client 0 started listening
+[2025-12-03 15:30:26] Client 1 waiting for messages
+[2025-12-03 15:30:26] Client 1 ready
+[2025-12-03 15:30:26] Client 1 started listening
+[2025-12-03 15:30:26] Client 2 joined
+[2025-12-03 15:30:26] Client 2 ready
+[2025-12-03 15:30:26] All clients confirmed readiness
+[2025-12-03 15:30:26] Client 2 started listening
+[2025-12-03 15:30:26] All clients started listening
+[2025-12-03 15:30:26] Client 2 waiting for messages
+[2025-12-03 15:30:26] Chat server ready. Commands:
+[2025-12-03 15:30:26]   all:<message>       - broadcast to all
+[2025-12-03 15:30:26]   to <id>:<message>   - send to specific client (0-2)
+[2025-12-03 15:30:26]   quit                - shutdown server
+[2025-12-03 15:30:29] Host broadcast:  ewqdas
+[2025-12-03 15:30:29] Client 1 received broadcast:  ewqdas
+[2025-12-03 15:30:29] Client 0 received broadcast:  ewqdas
+[2025-12-03 15:30:29] Client 2 received broadcast:  ewqdas
+[2025-12-03 15:37:00] === Chat server starting ===
+[2025-12-03 15:37:00] Client 0 waiting for messages
+[2025-12-03 15:37:00] Client 0 joined
+[2025-12-03 15:37:00] Client 0 ready
+[2025-12-03 15:37:00] Client 0 started listening
+[2025-12-03 15:37:00] Client 1 joined
+[2025-12-03 15:37:00] Client 2 waiting for messages
+[2025-12-03 15:37:00] Client 1 ready
+[2025-12-03 15:37:00] Client 1 waiting for messages
+[2025-12-03 15:37:00] Client 1 started listening
+[2025-12-03 15:37:00] Client 2 joined
+[2025-12-03 15:37:00] Client 2 ready
+[2025-12-03 15:37:00] Client 2 started listening
+[2025-12-03 15:37:00] All clients confirmed readiness
+[2025-12-03 15:37:00] All clients started listening
+[2025-12-03 15:37:00] Chat server ready. Commands:
+[2025-12-03 15:37:00]   all:<message>       - broadcast to all
+[2025-12-03 15:37:00]   to <id>:<message>   - send to specific client (0-2)
+[2025-12-03 15:37:00]   quit                - shutdown server
+[2025-12-03 15:37:00] Host broadcast:  test
+[2025-12-03 15:37:00] Client 1 received broadcast:  test
+[2025-12-03 15:37:00] Client 2 received broadcast:  test
+[2025-12-03 15:37:00] Server shutting down...
+[2025-12-03 15:37:00] Waiting for threads to finish...
+[2025-12-03 15:37:00] Client 0 received broadcast:  test
+[2025-12-03 15:37:00] Client 0 disconnected
+[2025-12-03 15:37:01] Client 1 disconnected
+[2025-12-03 15:37:01] Client 2 disconnected
+[2025-12-03 15:37:05] Terminating clients...
+[2025-12-03 15:37:06] === Chat server stopped ===
+[2025-12-03 15:37:14] === Chat server starting ===
+[2025-12-03 15:37:14] Client 0 waiting for messages
+[2025-12-03 15:37:14] Client 0 joined
+[2025-12-03 15:37:14] Client 1 waiting for messages
+[2025-12-03 15:37:14] Client 0 ready
+[2025-12-03 15:37:14] Client 2 joined
+[2025-12-03 15:37:14] Client 1 joined
+[2025-12-03 15:37:14] Client 0 started listening
+[2025-12-03 15:37:14] Client 2 ready
+[2025-12-03 15:37:14] Client 2 started listening
+[2025-12-03 15:37:14] Client 1 ready
+[2025-12-03 15:37:14] Client 1 started listening
+[2025-12-03 15:37:14] Client 2 waiting for messages
+[2025-12-03 15:37:14] All clients confirmed readiness
+[2025-12-03 15:37:14] All clients started listening
+[2025-12-03 15:37:14] Chat server ready. Commands:
+[2025-12-03 15:37:14]   all:<message>       - broadcast to all
+[2025-12-03 15:37:14]   to <id>:<message>   - send to specific client (0-2)
+[2025-12-03 15:37:14]   quit                - shutdown server
+[2025-12-03 15:37:14] Host broadcast:  test
+[2025-12-03 15:37:14] Server shutting down...
+[2025-12-03 15:37:14] Waiting for threads to finish...
+[2025-12-03 15:37:14] Client 0 received broadcast:  test
+[2025-12-03 15:37:14] Client 2 received broadcast:  test
+[2025-12-03 15:37:14] Client 1 received broadcast:  test
+[2025-12-03 15:37:15] Client 0 disconnected
+[2025-12-03 15:37:15] Client 2 disconnected
+[2025-12-03 15:37:15] Client 1 disconnected
+[2025-12-03 15:37:19] Terminating clients...
+[2025-12-03 15:37:20] === Chat server stopped ===
+[2025-12-03 15:37:29] === Chat server starting ===
+[2025-12-03 15:37:29] Client 0 joined
+[2025-12-03 15:37:29] Client 0 waiting for messages
+[2025-12-03 15:37:29] Client 1 joined
+[2025-12-03 15:37:29] Client 0 ready
+[2025-12-03 15:37:29] Client 2 joined
+[2025-12-03 15:37:29] Client 0 started listening
+[2025-12-03 15:37:29] Client 1 waiting for messages
+[2025-12-03 15:37:29] Client 1 ready
+[2025-12-03 15:37:29] Client 1 started listening
+[2025-12-03 15:37:34] Client 2 ready
+[2025-12-03 15:37:34] All clients confirmed readiness
+[2025-12-03 15:37:39] Client 2 started listening
+[2025-12-03 15:37:39] Client 2 waiting for messages
+[2025-12-03 15:37:39] All clients started listening
+[2025-12-03 15:37:39] Chat server ready. Commands:
+[2025-12-03 15:37:39]   all:<message>       - broadcast to all
+[2025-12-03 15:37:39]   to <id>:<message>   - send to specific client (0-2)
+[2025-12-03 15:37:39]   quit                - shutdown server
+[2025-12-03 15:37:39] Host broadcast:  test
+[2025-12-03 15:37:39] Server shutting down...
+[2025-12-03 15:37:39] Waiting for threads to finish...
+[2025-12-03 15:37:39] Client 0 received broadcast:  test
+[2025-12-03 15:37:39] Client 1 received broadcast:  test
+[2025-12-03 15:37:39] Client 2 received broadcast:  test
+[2025-12-03 15:37:44] Client 1 disconnected
+[2025-12-03 15:37:44] Client 2 disconnected
+[2025-12-03 15:37:44] Client 0 disconnected
+[2025-12-03 15:37:44] Terminating clients...
+[2025-12-03 15:37:45] === Chat server stopped ===
+[2025-12-03 15:39:25] === Chat server starting ===
+[2025-12-03 15:39:25] Client 0 waiting for messages
+[2025-12-03 15:39:25] Client 1 waiting for messages
+[2025-12-03 15:39:25] Client 0 joined
+[2025-12-03 15:39:25] Client 0 ready
+[2025-12-03 15:39:25] Client 0 started listening
+[2025-12-03 15:39:25] Client 1 joined
+[2025-12-03 15:39:25] Client 2 waiting for messages
+[2025-12-03 15:39:25] Client 1 ready
+[2025-12-03 15:39:25] Client 1 started listening
+[2025-12-03 15:39:25] Client 2 joined
+[2025-12-03 15:39:25] Client 2 ready
+[2025-12-03 15:39:25] Client 2 started listening
+[2025-12-03 15:39:25] All clients confirmed readiness
+[2025-12-03 15:39:25] All clients started listening
+[2025-12-03 15:39:25] Chat server ready. Commands:
+[2025-12-03 15:39:25]   all:<message>       - broadcast to all
+[2025-12-03 15:39:25]   to <id>:<message>   - send to specific client (0-2)
+[2025-12-03 15:39:25]   quit                - shutdown server
+[2025-12-03 15:39:28] Host broadcast:  eqwdas
+[2025-12-03 15:39:28] Client 1 received broadcast:  eqwdas
+[2025-12-03 15:39:28] Client 0 received broadcast:  eqwdas
+[2025-12-03 15:39:28] Client 2 received broadcast:  eqwdas
+[2025-12-03 15:39:34] Host private to 0:  wqedas
+[2025-12-03 15:39:34] Client 0 received host private to 0:  wqedas
+[2025-12-03 15:39:37] Host private to 1:  qwedas
+[2025-12-03 15:39:37] Client 1 received host private to 1:  qwedas
+[2025-12-03 15:39:40] Host private to 2:  eqwdsa
+[2025-12-03 15:39:40] Client 2 received host private to 2:  eqwdsa
+[2025-12-03 15:39:43] === Chat server starting ===
+[2025-12-03 15:39:43] Client 0 waiting for messages
+[2025-12-03 15:39:43] Client 0 joined
+[2025-12-03 15:39:43] Client 0 ready
+[2025-12-03 15:39:43] Client 0 started listening
+[2025-12-03 15:39:43] Client 1 waiting for messages
+[2025-12-03 15:39:43] Client 1 joined
+[2025-12-03 15:39:43] Client 2 joined
+[2025-12-03 15:39:43] Client 1 ready
+[2025-12-03 15:39:43] Client 2 waiting for messages
+[2025-12-03 15:39:43] Client 1 started listening
+[2025-12-03 15:39:43] Client 2 ready
+[2025-12-03 15:39:43] Client 2 started listening
+[2025-12-03 15:39:43] All clients confirmed readiness
+[2025-12-03 15:39:43] All clients started listening
+[2025-12-03 15:39:43] Chat server ready. Commands:
+[2025-12-03 15:39:43]   all:<message>       - broadcast to all
+[2025-12-03 15:39:43]   to <id>:<message>   - send to specific client (0-2)
+[2025-12-03 15:39:43]   quit                - shutdown server
+[2025-12-03 15:39:45] Host broadcast:  eqwdas
+[2025-12-03 15:39:45] Client 2 received broadcast:  eqwdas
+[2025-12-03 15:39:45] Client 1 received broadcast:  eqwdas
+[2025-12-03 15:39:45] Client 0 received broadcast:  eqwdas
+[2025-12-03 15:39:49] Host private to 0:  qewdas
+[2025-12-03 15:39:49] Client 0 received host private to 0:  qewdas
+[2025-12-03 15:39:51] Host private to 1:  qewdas
+[2025-12-03 15:39:51] Client 1 received host private to 1:  qewdas
+[2025-12-03 15:39:53] Host private to 2:  qwedsa
+[2025-12-03 15:39:53] Client 2 received host private to 2:  qwedsa
+[2025-12-03 15:39:56] === Chat server starting ===
+[2025-12-03 15:39:56] Client 0 joined
+[2025-12-03 15:39:56] Client 0 waiting for messages
+[2025-12-03 15:39:56] Client 0 ready
+[2025-12-03 15:39:56] Client 1 joined
+[2025-12-03 15:39:56] Client 0 started listening
+[2025-12-03 15:39:56] Client 2 joined
+[2025-12-03 15:39:56] Client 2 ready
+[2025-12-03 15:39:56] Client 2 started listening
+[2025-12-03 15:39:56] Client 2 waiting for messages
+[2025-12-03 15:39:56] Client 1 ready
+[2025-12-03 15:39:56] Client 1 started listening
+[2025-12-03 15:39:56] All clients confirmed readiness
+[2025-12-03 15:39:56] Client 1 waiting for messages
+[2025-12-03 15:39:56] All clients started listening
+[2025-12-03 15:39:56] Chat server ready. Commands:
+[2025-12-03 15:39:56]   all:<message>       - broadcast to all
+[2025-12-03 15:39:56]   to <id>:<message>   - send to specific client (0-2)
+[2025-12-03 15:39:56]   quit                - shutdown server
+[2025-12-03 15:39:58] Host broadcast:  qewdas
+[2025-12-03 15:39:58] Client 0 received broadcast:  qewdas
+[2025-12-03 15:39:58] Client 1 received broadcast:  qewdas
+[2025-12-03 15:39:58] Client 2 received broadcast:  qewdas
+[2025-12-03 15:40:00] Host private to 0:  qwedsa
+[2025-12-03 15:40:00] Client 0 received host private to 0:  qwedsa
+[2025-12-03 15:40:02] Host private to 1:  qewdas
+[2025-12-03 15:40:02] Client 1 received host private to 1:  qewdas
+[2025-12-03 15:40:04] Host private to 2:  qwedas
+[2025-12-03 15:40:04] Client 2 received host private to 2:  qwedas
+[2025-12-03 15:40:05] Server shutting down...
+[2025-12-03 15:40:05] Waiting for threads to finish...
+[2025-12-03 15:40:06] Client 2 disconnected
+[2025-12-03 15:40:06] Client 0 disconnected
+[2025-12-03 15:40:06] Client 1 disconnected
+[2025-12-03 15:40:06] Terminating clients...
+[2025-12-03 15:40:07] === Chat server stopped ===
