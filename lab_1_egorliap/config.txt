@@ -1,0 +1,5 @@
+# Каждые 10 секунд переносить содержимое ~/src в ~/dst
+/home/egorliap/tmp/src1 /home/egorliap/tmp/dst1 10
+
+# Каждые 30 секунд переносить файлы из /tmp/in в /tmp/out
+/tmp/in /tmp/out 30
