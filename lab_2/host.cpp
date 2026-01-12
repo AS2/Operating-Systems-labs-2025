@@ -12,25 +12,16 @@
 #include <cstring>
 #include <cerrno>
 #include <csignal>
+#include <cstddef>
 #include <unistd.h>
 #include <sys/wait.h>
 #include <sys/mman.h>
 #include <semaphore.h>
 
 #include "message.h"
+#include "conn_factory.h"
 
-#if defined(SHM)
-#include "conn_shm.h"
-using ConnType = ConnShm;
-#elif defined(MQ)
-#include "conn_mq.h"
-using ConnType = ConnMq;
-#elif defined(FIFO)
-#include "conn_fifo.h"
-using ConnType = ConnFifo;
-#else
-#error "Define SHM, MQ or FIFO"
-#endif
+using ConnType = ConnectionFactory::ConnType;
 
 volatile bool running = true;
 sem_t *shared_sem = nullptr;
@@ -38,7 +29,6 @@ sem_t *shared_sem = nullptr;
 namespace {
 
 void log_message(const std::string &s) {
-    // Пишем и в файл, и в консоль
     {
         std::ofstream log_file("log.txt", std::ios::app);
         if (log_file.is_open()) {
@@ -173,9 +163,8 @@ void inactivity_monitor() {
         }
     }
 }
-
 void run_client(int id) {
-    ConnType conn(id, false);
+    ConnType* conn = ConnectionFactory::Create(id, false);
 
     Message ready{};
     ready.timestamp = std::time(nullptr);
@@ -184,7 +173,7 @@ void run_client(int id) {
     std::strncpy(ready.text, "ready", sizeof(ready.text) - 1);
     ready.text[sizeof(ready.text) - 1] = '\0';
 
-    if (!write_msg(&conn, ready)) {
+    if (!write_msg(conn, ready)) {
         log_message("Client " + std::to_string(id) + " failed to send ready signal");
     }
 
@@ -194,14 +183,14 @@ void run_client(int id) {
     listening.target_id = TARGET_SYSTEM;
     std::strncpy(listening.text, "listening", sizeof(listening.text) - 1);
     listening.text[sizeof(listening.text) - 1] = '\0';
-    if (!write_msg(&conn, listening)) {
+    if (!write_msg(conn, listening)) {
         log_message("Client " + std::to_string(id) + " failed to send listening signal");
     }
 
     log_message("Client " + std::to_string(id) + " waiting for messages");
 
     Message m{};
-    while (conn.Read(&m, MSG_SIZE)) {
+    while (conn->Read(&m, MSG_SIZE)) {
         std::string prefix;
         if (m.sender_id == -1) {
             prefix = (m.target_id == TARGET_BROADCAST)
@@ -214,6 +203,7 @@ void run_client(int id) {
                     " received " + prefix + ": " + m.text);
     }
 
+    delete conn;
     log_message("Client " + std::to_string(id) + " exiting");
 }
 
@@ -239,13 +229,10 @@ int main() {
 
     log_message("=== Chat server starting ===");
 
-#ifdef FIFO
     for (int i = 0; i < NUM_CLIENTS; ++i) {
-        ConnFifo::PrepareEndpoints(i);
+        ConnectionFactory::Prepare(i);
     }
-#endif
 
-    // Запускаем дочерние процессы-клиенты
     for (int i = 0; i < NUM_CLIENTS; ++i) {
         pid_t pid = ::fork();
         if (pid == -1) {
@@ -254,12 +241,10 @@ int main() {
         }
 
         if (pid == 0) {
-            // ======== CLIENT =========
             run_client(i);
             _exit(0);
         } else {
-            // ======== HOST ==========
-            auto *conn = new ConnType(i, true);
+            auto *conn = ConnectionFactory::Create(i, true);
             client_pids.push_back(pid);
             connections.push_back(conn);
             last_activity.push_back(std::time(nullptr));
@@ -315,7 +300,6 @@ int main() {
     log_message("  to <id>:<message>   - send to specific client (0-2)");
     log_message("  quit                - shutdown server");
 
-    // Основной цикл ввода хоста
     std::string line;
     while (running && std::getline(std::cin, line)) {
         if (!line.empty() && line.back() == '\r') {
@@ -388,7 +372,6 @@ int main() {
         }
     }
 
-    // Завершение
     running = false;
     log_message("Waiting for threads to finish...");
 

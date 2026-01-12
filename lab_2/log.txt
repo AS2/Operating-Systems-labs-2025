@@ -248,3 +248,147 @@
 [2025-12-03 15:40:06] Client 1 disconnected
 [2025-12-03 15:40:06] Terminating clients...
 [2025-12-03 15:40:07] === Chat server stopped ===
+[2026-01-10 23:43:08] === Chat server starting ===
+[2026-01-10 23:43:08] Client 0 waiting for messages
+[2026-01-10 23:43:08] Client 0 joined
+[2026-01-10 23:43:08] Client 0 ready
+[2026-01-10 23:43:08] Client 0 started listening
+[2026-01-10 23:43:08] Client 1 waiting for messages
+[2026-01-10 23:43:08] Client 1 joined
+[2026-01-10 23:43:08] Client 1 ready
+[2026-01-10 23:43:08] Client 1 started listening
+[2026-01-10 23:43:08] Client 2 waiting for messages
+[2026-01-10 23:43:08] Client 2 joined
+[2026-01-10 23:43:08] Client 2 ready
+[2026-01-10 23:43:08] Client 2 started listening
+[2026-01-10 23:43:08] All clients confirmed readiness
+[2026-01-10 23:43:08] All clients started listening
+[2026-01-10 23:43:08] Chat server ready. Commands:
+[2026-01-10 23:43:08]   all:<message>       - broadcast to all
+[2026-01-10 23:43:08]   to <id>:<message>   - send to specific client (0-2)
+[2026-01-10 23:43:08]   quit                - shutdown server
+[2026-01-10 23:43:08] Host broadcast:  qwe
+[2026-01-10 23:43:08] Host private to 0:  qwe
+[2026-01-10 23:43:08] Host private to 1:  qwe
+[2026-01-10 23:43:08] Client 0 received broadcast:  qwe
+[2026-01-10 23:43:08] Client 1 received broadcast:  qwe
+[2026-01-10 23:43:08] Client 2 received broadcast:  qwe
+[2026-01-10 23:43:08] Client 1 received host private to 1:  qwe
+[2026-01-10 23:43:08] Host private to 2:  qwe
+[2026-01-10 23:43:08] Client 2 received host private to 2:  qwe
+[2026-01-10 23:43:08] Client 0 received host private to 0:  qwe
+[2026-01-10 23:43:08] Server shutting down...
+[2026-01-10 23:43:08] Waiting for threads to finish...
+[2026-01-10 23:43:09] Client 0 disconnected
+[2026-01-10 23:43:09] Client 1 disconnected
+[2026-01-10 23:43:09] Client 2 disconnected
+[2026-01-10 23:43:13] Terminating clients...
+[2026-01-10 23:43:14] === Chat server stopped ===
+[2026-01-10 23:43:40] === Chat server starting ===
+[2026-01-10 23:43:40] Client 0 waiting for messages
+[2026-01-10 23:43:41] Client 0 joined
+[2026-01-10 23:43:41] Client 0 ready
+[2026-01-10 23:43:41] Client 0 started listening
+[2026-01-10 23:43:41] Client 1 waiting for messages
+[2026-01-10 23:43:41] Client 1 joined
+[2026-01-10 23:43:41] Client 1 ready
+[2026-01-10 23:43:41] Client 1 started listening
+[2026-01-10 23:43:41] Client 2 waiting for messages
+[2026-01-10 23:43:41] Client 2 joined
+[2026-01-10 23:43:41] Client 2 ready
+[2026-01-10 23:43:41] Client 2 started listening
+[2026-01-10 23:43:41] All clients confirmed readiness
+[2026-01-10 23:43:41] All clients started listening
+[2026-01-10 23:43:41] Chat server ready. Commands:
+[2026-01-10 23:43:41]   all:<message>       - broadcast to all
+[2026-01-10 23:43:41]   to <id>:<message>   - send to specific client (0-2)
+[2026-01-10 23:43:41]   quit                - shutdown server
+[2026-01-10 23:43:41] Host broadcast:  qwe
+[2026-01-10 23:43:41] Host private to 0:  qwe1
+[2026-01-10 23:43:41] Client 1 received broadcast:  qwe
+[2026-01-10 23:43:41] Host private to 1:  qwe2
+[2026-01-10 23:43:41] Client 2 received broadcast:  qwe
+[2026-01-10 23:43:41] Client 1 received host private to 1:  qwe2
+[2026-01-10 23:43:41] Host private to 2:  qwe3
+[2026-01-10 23:43:41] Client 0 received broadcast:  qwe
+[2026-01-10 23:43:41] Server shutting down...
+[2026-01-10 23:43:41] Client 2 received host private to 2:  qwe3
+[2026-01-10 23:43:41] Waiting for threads to finish...
+[2026-01-10 23:43:41] Client 0 received host private to 0:  qwe1
+[2026-01-10 23:43:41] Client 0 disconnected
+[2026-01-10 23:43:41] Client 1 disconnected
+[2026-01-10 23:43:41] Client 2 disconnected
+[2026-01-10 23:43:46] Terminating clients...
+[2026-01-10 23:43:47] === Chat server stopped ===
+[2026-01-10 23:43:55] === Chat server starting ===
+[2026-01-10 23:43:55] Client 0 joined
+[2026-01-10 23:43:55] Client 1 waiting for messages
+[2026-01-10 23:43:55] Client 1 joined
+[2026-01-10 23:43:55] Client 0 waiting for messages
+[2026-01-10 23:43:55] Client 2 joined
+[2026-01-10 23:43:55] Client 1 ready
+[2026-01-10 23:43:55] Client 1 started listening
+[2026-01-10 23:43:55] Client 2 waiting for messages
+[2026-01-10 23:43:55] Client 2 ready
+[2026-01-10 23:43:55] Client 2 started listening
+[2026-01-10 23:43:55] Client 0 ready
+[2026-01-10 23:43:55] Client 0 started listening
+[2026-01-10 23:43:55] All clients confirmed readiness
+[2026-01-10 23:43:55] All clients started listening
+[2026-01-10 23:43:55] Chat server ready. Commands:
+[2026-01-10 23:43:55]   all:<message>       - broadcast to all
+[2026-01-10 23:43:55]   to <id>:<message>   - send to specific client (0-2)
+[2026-01-10 23:43:55]   quit                - shutdown server
+[2026-01-10 23:43:55] Host broadcast:  qwe
+[2026-01-10 23:43:55] Host private to 0:  qwe1
+[2026-01-10 23:43:55] Host private to 1:  qwe2
+[2026-01-10 23:43:55] Client 0 received broadcast:  qwe
+[2026-01-10 23:43:55] Host private to 2:  qwe3
+[2026-01-10 23:43:55] Server shutting down...
+[2026-01-10 23:43:55] Client 0 received host private to 0:  qwe1
+[2026-01-10 23:43:55] Waiting for threads to finish...
+[2026-01-10 23:43:55] Client 2 received broadcast:  qwe
+[2026-01-10 23:43:55] Client 2 received host private to 2:  qwe3
+[2026-01-10 23:43:55] Client 1 received broadcast:  qwe
+[2026-01-10 23:43:55] Client 1 received host private to 1:  qwe2
+[2026-01-10 23:43:56] Client 1 disconnected
+[2026-01-10 23:43:56] Client 2 disconnected
+[2026-01-10 23:43:56] Client 0 disconnected
+[2026-01-10 23:44:00] Terminating clients...
+[2026-01-10 23:44:01] === Chat server stopped ===
+[2026-01-10 23:44:13] === Chat server starting ===
+[2026-01-10 23:44:13] Client 1 joined
+[2026-01-10 23:44:13] Client 2 joined
+[2026-01-10 23:44:13] Client 0 joined
+[2026-01-10 23:44:13] Client 1 ready
+[2026-01-10 23:44:13] Client 1 started listening
+[2026-01-10 23:44:13] Client 1 waiting for messages
+[2026-01-10 23:44:13] Client 2 ready
+[2026-01-10 23:44:13] Client 0 ready
+[2026-01-10 23:44:13] Client 0 started listening
+[2026-01-10 23:44:13] All clients confirmed readiness
+[2026-01-10 23:44:13] Client 2 started listening
+[2026-01-10 23:44:13] Client 0 waiting for messages
+[2026-01-10 23:44:13] All clients started listening
+[2026-01-10 23:44:13] Client 2 waiting for messages
+[2026-01-10 23:44:13] Chat server ready. Commands:
+[2026-01-10 23:44:13]   all:<message>       - broadcast to all
+[2026-01-10 23:44:13]   to <id>:<message>   - send to specific client (0-2)
+[2026-01-10 23:44:13]   quit                - shutdown server
+[2026-01-10 23:44:13] Host broadcast:  qwe
+[2026-01-10 23:44:13] Host private to 0:  qwe1
+[2026-01-10 23:44:13] Host private to 1:  qwe2
+[2026-01-10 23:44:13] Client 2 received broadcast:  qwe
+[2026-01-10 23:44:13] Host private to 2:  qwe3
+[2026-01-10 23:44:13] Client 1 received broadcast:  qwe
+[2026-01-10 23:44:13] Client 0 received broadcast:  qwe
+[2026-01-10 23:44:13] Server shutting down...
+[2026-01-10 23:44:13] Client 2 received host private to 2:  qwe3
+[2026-01-10 23:44:13] Waiting for threads to finish...
+[2026-01-10 23:44:13] Client 1 received host private to 1:  qwe2
+[2026-01-10 23:44:13] Client 0 received host private to 0:  qwe1
+[2026-01-10 23:44:18] Client 1 disconnected
+[2026-01-10 23:44:18] Client 0 disconnected
+[2026-01-10 23:44:18] Client 2 disconnected
+[2026-01-10 23:44:18] Terminating clients...
+[2026-01-10 23:44:19] === Chat server stopped ===

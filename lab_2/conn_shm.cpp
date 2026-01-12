@@ -73,7 +73,7 @@ ConnShm::ConnShm(int id, bool create)
             if (fd_ != -1) {
                 break;
             }
-            ::usleep(100000);
+            ::usleep(100000); // 100 мс
         }
         if (fd_ == -1) {
             std::perror("shm_open (client)");

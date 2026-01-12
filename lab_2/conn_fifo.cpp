@@ -57,7 +57,7 @@ void set_blocking(int fd) {
     ::fcntl(fd, F_SETFL, flags);
 }
 
-} // namespace
+}
 
 void ConnFifo::PrepareEndpoints(int id) {
     std::string c2h = path_c2h(id);
@@ -82,16 +82,13 @@ ConnFifo::ConnFifo(int id, bool create)
     constexpr int kAttempts = 100;
 
     if (creator_) {
-        // Хост: читает из c2h, пишет в h2c
         fd_read_ = open_with_retry(path_c2h_, O_RDONLY | O_NONBLOCK, kAttempts);
         fd_write_ = open_with_retry(path_h2c_, O_WRONLY | O_NONBLOCK, kAttempts);
     } else {
-        // Клиент: читает из h2c, пишет в c2h
         fd_read_ = open_with_retry(path_h2c_, O_RDONLY | O_NONBLOCK, kAttempts);
         fd_write_ = open_with_retry(path_c2h_, O_WRONLY | O_NONBLOCK, kAttempts);
     }
 
-    // Для записи удобно иметь блокирующий режим, чтобы не получать EAGAIN
     set_blocking(fd_write_);
 }
 
@@ -108,7 +105,7 @@ bool ConnFifo::Read(void *buf, std::size_t cnt) {
         pfd.fd = fd_read_;
         pfd.events = POLLIN;
 
-        int rv = ::poll(&pfd, 1, 500); // 500 мс
+        int rv = ::poll(&pfd, 1, 500);
         if (rv < 0) {
             if (errno == EINTR) {
                 continue;
@@ -128,7 +125,7 @@ bool ConnFifo::Read(void *buf, std::size_t cnt) {
         ssize_t n = ::read(fd_read_, ptr + total_read, cnt - total_read);
         if (n <= 0) {
             if (n == 0) {
-                return false; // EOF
+                return false;
             }
             if (errno == EINTR) {
                 continue;

@@ -16,8 +16,8 @@ private:
     int  id_{};
     bool creator_{false};
 
-    std::string path_c2h_; // client -> host
-    std::string path_h2c_; // host   -> client
+    std::string path_c2h_; 
+    std::string path_h2c_;
 
     int fd_read_{-1};
     int fd_write_{-1};

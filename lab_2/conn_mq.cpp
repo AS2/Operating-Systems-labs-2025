@@ -33,6 +33,7 @@ ConnMq::ConnMq(int id, bool create)
             std::perror("mq_open (creator)");
         }
     } else {
+
         mq_write_ = mq_open(from.c_str(), O_CREAT | O_RDWR, 0666, &attr);
         mq_read_  = mq_open(to.c_str(),   O_CREAT | O_RDWR, 0666, &attr);
         if (mq_read_ == static_cast<mqd_t>(-1) || mq_write_ == static_cast<mqd_t>(-1)) {
